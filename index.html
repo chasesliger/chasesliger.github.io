@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume/CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/chasesliger"><img id="logo" src="images/github_logo.jpeg" height="24"> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/chase-sliger-594854b2/"><img id="logo" src="images/linkedin_logo.png" height="24"> LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+        <img src="images/P8.jpg" alt="Picture of the handsome author of this page" height="80%" width="100%">
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Chase Sliger's Homepage</h1>
+      <p>I am a engineer with 10 years of experience in the nuclear industry that is looking to make a career pivot into software development. I have a masters degree in Industrial Engineering and a bachelors degree in Physics. Past jobs of mine include particle accelerator operator and shift supervisor, regional sales manager for a nuclear gauge instrumentation company, and production control engineer for a Department of Energy contractor.</p>
+      <p>I love learning new things. Though I have taken a few CS classes, I am currently teaching myself using various online resources and creating projects.</p>
+      <hr>
+      <h3>Skills</h3>
+      <p>*Python (Flask, Numpy, Matplotlib, Pandas) *SQL (SQLite, PostgreSQL) *C  *HTML, CSS, and JavaScript *Advanced Microsoft Excel *Microsoft Access *SharePoint *Web Scraping & APIs *SAP (ME, PP, PM)  *Tableau  *Excellent presentation, communication, and interpersonal skills *Agile Software Development training and experience</p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>This website was designed by me, Chase Sliger, using <a href="https://getbootstrap.com/"> Bootstrap </a>. </p>
+</footer>
+
+</body>
+</html>
